@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Casa Viva</title>
+</head>
+<body>
+    
+    <header>
+        <div>
+            <img src="images/logobien.png" alt="Logo">
+        </div>
+        <div class="navigation">
+            <nav> 
+                <a href="#">HOME</a>
+                <a href="#">CASAS</a>
+                <a href="#">LIVING</a>
+                <a href="#">SOLUCIONES</a>
+                <a href="#">CONTACTO</a>
+                <a href="#">SUSCRIPCIONES Y TIENDA ONLINE</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="contacto">
+                <h2>Datos de suscripción</h2>
+                <form class="formulario" method="POST" action="http://www.cursos-diseno.es/mi-mail.php">
+                    <table>
+                        <tr>
+                            <td></td>
+                            <td>Campos obligatorios*</td>
+                        </tr>
+                        <tr>
+                            <td class="texto">Nombre*</td>
+                            <td><input class="input-ancho" type="text" name="nombre" autofocus required></td>
+                        </tr>
+                        <tr>
+                            <td class="texto">Apellidos*</td>
+                            <td><input class="input-ancho" type="text" name="apellidos" required></td>
+                        </tr>
+                        <tr>
+                            <td class="texto">Dirección*</td>
+                            <td><input class="input-ancho" type="text" name="direccion" placeholder="Calle,nº, piso..." required></td>
+                        </tr>
+                        <tr>
+                            <td class="texto">Código Postal*</td>
+                            <td><input class="input-medio" type="text" maxlength="5" name="cp" required ;"></td>
+                        </tr>
+                        <tr>
+                            
+                            <td class="texto">Población*</td>
+                            <td><input type="text" class="input-medio" name="poblacion*" required></td>
+                        </tr>
+                        <tr>
+                            <td class="texto">Provincia</td>
+                            <td><select class="input-pequeño" name="provincia" required>
+                                <option value="">- selecciona -</option>
+                                <option value="15">A coru&#241;a</option>
+                                <option value="1">&#193;lava</option>
+                                <option value="2">Albacete</option>
+                                <option value="3">Alicante</option>
+                                <option value="4">Almer&#237;a</option>
+                                <option value="33">Asturias</option>
+                                <option value="5">&#193;vila</option>
+                                <option value="6">Badajoz</option>
+                                <option value="7">Baleares</option>
+                                <option value="8">Barcelona</option>
+                                <option value="9">Burgos</option>
+                                <option value="10">C&#225;ceres</option>
+                                <option value="11">C&#225;diz</option>
+                                <option value="39">Cantabria</option>
+                                <option value="12">Castell&#243;n</option>
+                                <option value="51">Ceuta</option>
+                                <option value="13">Ciudad Real</option>
+                                <option value="14">C&#243;rdoba</option>
+                                <option value="16">Cuenca</option>
+                                <option value="99">Extranjero</option>
+                                <option value="17">Girona</option>
+                                <option value="18">Granada</option>
+                                <option value="19">Guadalajara</option>
+                                <option value="20">Guip&#250;zcoa</option>
+                                <option value="21">Huelva</option>
+                                <option value="22">Huesca</option>
+                                <option value="23">Ja&#233;n</option>
+                                <option value="26">La rioja</option>
+                                <option value="35">Las palmas</option>
+                                <option value="24">Le&#243;n</option>
+                                <option value="25">Lleida</option>
+                                <option value="27">Lugo</option>
+                                <option value="28">Madrid</option>
+                                <option value="29">M&#225;laga</option>
+                                <option value="52">Melilla</option>
+                                <option value="30">Murcia</option>
+                                <option value="31">Navarra</option>
+                                <option value="32">Ourense</option>
+                                <option value="34">Palencia</option>
+                                <option value="36">Pontevedra</option>
+                                <option value="37">Salamanca</option>
+                                <option value="38">Santa cruz de tenerife</option>
+                                <option value="40">Segovia</option>
+                                <option value="41">Sevilla</option>
+                                <option value="42">Soria</option>
+                                <option value="43">Tarragona</option>
+                                <option value="44">Teruel</option>
+                                <option value="45">Toledo</option>
+                                <option value="46">Valencia</option>
+                                <option value="47">Valladolid</option>
+                                <option value="48">Vizcaya</option>
+                                <option value="49">Zamora</option>
+                                <option value="50">Zaragoza</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td class="texto">Teléfono*</td>
+                            <td><input type="tel" class="input-medio"  placeholder="+34 123 456 789" required></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>Datos de usuario</h2>
+                            </td>
+                        </tr>
+                
+                        <tr>
+                            <td class="texto">Dirección de correo electrónico*</td>
+                            <td><input class="input-ancho" type="email" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <td class="texto">Contraseña*</td>
+                            <td><input class="input-medio" type="password" required></td>
+                        </tr>
+                        <tr>
+                            <td class="texto">Confirmación de la contraseña*</td>
+                            <td><input class="input-medio" type="password" required></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <label><input  type="checkbox" name="condiciones" required> Acepto las <a href="#">condiciones</a> *</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="hidden" name="destinatario" value="esther_lenador_tsapp1oa2021@cev.com"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Suscribirme"></td>
+                        </tr>
+                        
+
+                    </table>
+                </form>
+            </div>
+            <div class="imagen" >
+                <img src="images/revista.jpg" alt="">
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <a href="#">Contacto</a>
+                <a href="#">Condiciones Generales</a>
+                <a href="#">Condiciones y gastos de envío</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Inofrmación de contacto</a>
+
+            </div>
+        </footer>
+
+
+</body>
+</html>
